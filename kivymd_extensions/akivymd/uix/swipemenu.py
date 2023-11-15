@@ -291,7 +291,7 @@ class AKSwipeMenu(RelativeLayout, EventDispatcher):
 
     auto_dismiss = BooleanProperty(True)
     """
-    Determines if the view is automatically dismissed when the user clicks outside it.
+    Determines if the screen is automatically dismissed when the user clicks outside it.
 
     :attr:`auto_dismiss` is a :class:`~kivy.properties.BooleanProperty`
     and defaults to `True`.

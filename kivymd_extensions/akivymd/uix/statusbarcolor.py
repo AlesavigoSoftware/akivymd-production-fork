@@ -10,9 +10,9 @@ def change_statusbar_color(statuscolor, icons_color="Light"):
     from jnius import autoclass
 
     Color = autoclass("android.graphics.Color")
-    WindowManager = autoclass("android.view.WindowManager$LayoutParams")
+    WindowManager = autoclass("android.screen.WindowManager$LayoutParams")
     activity = autoclass("org.kivy.android.PythonActivity").mActivity
-    View = autoclass("android.view.View")
+    View = autoclass("android.screen.View")
 
     def statusbar(*args):
         color = get_hex_from_color(statuscolor)[:7]
