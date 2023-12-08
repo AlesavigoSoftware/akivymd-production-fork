@@ -55,8 +55,8 @@ Builder.load_string(
                     labels: True
                     anim: True
                     lines: False
-                    x_labels: ["XYZ", "Second", "Third", "Last"]
-                    y_labels: ["XYZ", "Second", "Third", "Last"]
+                    x_labels: ["XYZ", "Placeholder", "Third", "Last"]
+                    y_labels: ["XYZ", "Placeholder", "Third", "Last"]
                     on_select: root.set_text(args)
 
         MDBoxLayout:
@@ -96,6 +96,6 @@ class Linechart(MDScreen):
         chart3.update()
 
         chart4 = self.ids.chart4
-        chart4.x_labels = ["XYZ", "Second", "Third", "Last"]
-        chart4.y_labels = ["XYZ", "Second", "Third", "Last"]
+        chart4.x_labels = ["XYZ", "Placeholder", "Third", "Last"]
+        chart4.y_labels = ["XYZ", "Placeholder", "Third", "Last"]
         chart4.update()

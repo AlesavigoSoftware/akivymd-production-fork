@@ -47,8 +47,8 @@ Builder.load_string(
                     id: chart3
                     labels: True
                     anim: True
-                    x_labels: ["XYZ", "Second", "Third", "Last"]
-                    y_labels: ["XYZ", "Second", "Third", "Last"]
+                    x_labels: ["XYZ", "Placeholder", "Third", "Last"]
+                    y_labels: ["XYZ", "Placeholder", "Third", "Last"]
                     bars_color: 0.6, 0, 0, 1
                     labels_color: 0.6, 0, 0, 1
                     lines_color: 0.6, 0, 0, 1
@@ -86,6 +86,6 @@ class Barchart(MDScreen):
         chart2.update()
 
         chart3 = self.ids.chart3
-        chart3.x_labels = ["XYZ", "Second", "Third", "Last"]
-        chart3.y_labels = ["XYZ", "Second", "Third", "Last"]
+        chart3.x_labels = ["XYZ", "Placeholder", "Third", "Last"]
+        chart3.y_labels = ["XYZ", "Placeholder", "Third", "Last"]
         chart3.update()
