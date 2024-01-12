@@ -105,7 +105,7 @@ class NewScrollView(ScrollView):
 
                 if not self._root.pin_top:
                     self._root.toolbar_bg = self._root.toolbar_bg[0:3] + [0]
-                    self._root.ids.toolbar.opacity = opacity
+                    self._root.ids.toolbar.opacities = opacity
                 else:
                     self._root.toolbar_bg = self._root.toolbar_bg[0:3] + [
                         1 - opacity
@@ -115,7 +115,7 @@ class NewScrollView(ScrollView):
 
             else:
                 if not self._root.pin_top:
-                    self._root.ids.toolbar.opacity = 0
+                    self._root.ids.toolbar.opacities = 0
                 else:
                     self._root.toolbar_bg = self._root.toolbar_bg[0:3] + [1]
 

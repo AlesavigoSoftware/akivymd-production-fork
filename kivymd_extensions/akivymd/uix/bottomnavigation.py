@@ -296,10 +296,10 @@ class AKBottomNavigation(ThemableBehavior, BoxLayout):
         AKBottomNavigation._selected = index
 
         for x in self.ids._buttons_bar.children:  # button
-            x.opacity = 1
+            x.opacities = 1
 
         for x in self.ids._text_bar.children:  # text
-            x.opacity = 0
+            x.opacities = 0
 
         bubble_pos = self.current_item_button.x - dp(31)
         anim_bubble = Animation(
