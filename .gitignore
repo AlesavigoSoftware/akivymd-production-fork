@@ -42,11 +42,7 @@ pip-delete-this-directory.txt
 .ipynb_checkpoints
 *.swp
 # PyCharm
-.idea/*
-!/.idea/*.iml
-!/.idea/modules.xml
-!/.idea/vcs.xml
-!/.idea/runConfigurations
+.idea
 
 # Vs
 *.code-workspace
